@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imagens/CarroLogo1.png" type="image/x-icon"> <!--Favicon o icone lá de cima-->
+</head>
+
+<!--Index de Cadastro-->
+
+<body>
+  <div class="box">
+    <form action=""> <!--Aqui esta o form pra colocar o method e o action que tu preferir-->
+      <h1>Cadastro</h1>
+      <div class="inputBox">
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="inputUser"> <!--input de nome-->
+      </div>
+
+      <br> <!--Só pra pular linha, é pra estilo-->
+
+      <div class="inputBox">
+        <input type="text" name="email" id="email" placeholder="Digite seu Email" class="inputUser">
+        <!--input de email-->
+      </div>
+
+      <br> <!--Só pra pular linha, é pra estilo-->
+
+      <div class="inputBox">
+        <input type="password" name="senha" id="senha" placeholder="Digite sua Senha" class="inputUser">
+        <!--input de senha-->
+      </div>
+
+      <br> <!--Só pra pular linha, é pra estilo-->
+
+      <div class="inputBoxCpf">
+        <input type="cpf" name="cpf" id="cpf" placeholder="Digite seu CPF" class="inputUser"> <!--input de cpf-->
+        <span id="span"></span> <!--Span pra aparecer a mensagem de valido ou não valido-->
+      </div>
+
+      <input type="submit" id="submit" name="enviar"> <!--botao de enviar-->
+    </form>
+
+    <div class="ancora">
+      <a href="index2.html">Já tenho uma conta</a> <!--ancora pra ir pra tela de login-->
+    </div>
+
+  </div>
+</body>
+<script src="validadorCPF.js"></script>
+
+</html>
